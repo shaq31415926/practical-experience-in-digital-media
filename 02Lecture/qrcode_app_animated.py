@@ -16,14 +16,14 @@ url = st.text_input("Enter your URL please 👇")
 current_ts = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
 
 # create a def that wil take the url and generate an animated qr code
-def generate_qrcode():
+def generate_animated_qrcode():
     print("to be updated")
 
 
 if url is not None and url != "":
     with st.spinner('Generating QR Code... 💫'):
         time.sleep(2.5)
-    generate_qrcode()
+    generate_animated_qrcode()
 
     # open the animated qr code image and load it to your streamlit app
     # reference: https://discuss.streamlit.io/t/how-to-show-local-gif-image/3408/3
