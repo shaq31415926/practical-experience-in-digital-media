@@ -27,13 +27,14 @@ if url is not None and url != "":
 
     # open the animated qr code image and load it to your streamlit app
     # reference: https://discuss.streamlit.io/t/how-to-show-local-gif-image/3408/3
-    #file_ = open("images/my_animated_qrcode_working.gif", "rb")
-    file_ = open("https://github.com/shaq31415926/practical-experience-in-digital-media/blob/main/02Lecture/images/my_animated_qrcode_working.gif", "rb")
+    #file_path = "https://github.com/shaq31415926/practical-experience-in-digital-media/blob/08de407f471f967891fbe1a73bbe06177fca6243/02Lecture/images/my_animated_qrcode_working.gif?raw=true"
+    file_path = "images/my_animated_qrcode_working.gif"
+    file_ = open(file_path, "rb")
     contents = file_.read()
     data_url = base64.b64encode(contents).decode("utf-8")
     file_.close()
-
     st.markdown(
         f'<img src="data:image/gif;base64,{data_url}" alt="gif">',
         unsafe_allow_html=True,
     )
+
