@@ -16,10 +16,16 @@ def get_content():
     # contents = requests.get('https://cataas.com//cat/gif')
     return contents.content
 
+# 03Lecture/images/main_banner.png
+# https://github.com/shaq31415926/practical-experience-in-digital-media/blob/main/03Lecture/images/main_banner.png
+#
+
 
 def place_cat_image():
     """Place the cat image from the cataas.com API"""
-    cat_image = get_content()
+    #cat_image = get_content()
+    #cat_image = "https://raw.githubusercontent.com/shaq31415926/practical-experience-in-digital-media/blob/main/03Lecture/images/main_banner.png"
+    cat_image = "https://raw.githubusercontent.com/TomJohnH/streamlit-dungeon/main/graphics/other/dungeon_crawler.png"
     st.image(cat_image, width=200)
 
 
