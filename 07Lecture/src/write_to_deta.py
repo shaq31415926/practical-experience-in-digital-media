@@ -12,7 +12,7 @@ with st.form("form"):
 deta = Deta(st.secrets["data_key"])
 
 # Create a new database "example-db"
-db_name = "test-db" # you can adjust this every time yoz want to store your data in a new database
+db_name = "test-db" # you can adjust this every time you want to store your data in a new database
 # If you need a new database, just use another name.
 db = deta.Base(db_name)
 
