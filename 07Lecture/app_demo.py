@@ -52,7 +52,7 @@ with placeholder.form("Login"):
     if login_button:
         increment_login_counter()  # keep track of the number of times the user comes on this button
         # if it's the users first time dont print anything
-        if st.session_state.register_count > 1:
+        if st.session_state.login_count > 1:
             # if user name exists in user name - change credentials check flag to True
             if user_name in user_names:
                 # this selects the password of the user that is entering information
